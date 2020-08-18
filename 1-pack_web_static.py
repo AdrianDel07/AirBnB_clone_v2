@@ -7,6 +7,7 @@ from datetime import datetime
 
 n = datetime.now()
 
+
 def do_pack():
     """return the archive path if the archive has been correctly generated"""
     file_name = 'versions/web_static_{}{}{}{}{}{}.tgz'.format(
