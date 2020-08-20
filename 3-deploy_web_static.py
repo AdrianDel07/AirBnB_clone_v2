@@ -7,8 +7,8 @@ from fabric.api import *
 from os import path
 from datetime import datetime
 
-env.hosts = ['34.75.68.113', '54.226.84.62']
 env.user = 'ubuntu'
+env.hosts = ['54.226.84.62']
 
 n = datetime.now()
 
@@ -66,7 +66,7 @@ def do_deploy(archive_path):
     return (ret_value)
 
 
-def depploy():
+def deploy():
     """Distribute to all servers"""
     archv_path = do_pack()
     if archv_path is None:
