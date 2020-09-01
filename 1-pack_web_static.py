@@ -18,7 +18,7 @@ def do_pack():
         n.minute,
         n.second)
     local('mkdir -p versions')
-    command = local("tar -cvzf " + file_name + " ./web_static")
+    command = local("tar -cvzf " + file_name + " ./web_static/")
     if command.succeeded:
         return file_name
     return None

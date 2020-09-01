@@ -1,66 +1,40 @@
 {
-    "Amenity.2a0ca15d-4418-4dbc-a64d-cc3dd763767f": {
-        "id": "2a0ca15d-4418-4dbc-a64d-cc3dd763767f",
-        "created_at": "2020-08-13T21:56:35.645256",
-        "updated_at": "2020-08-13T21:56:35.645707",
-        "name": "Wifi",
-        "__class__": "Amenity"
-    },
-    "BaseModel.030ff560-f371-4e34-a70d-6fb1503980df": {
-        "id": "030ff560-f371-4e34-a70d-6fb1503980df",
-        "created_at": "2020-08-13T21:56:35.647492",
-        "updated_at": "2020-08-13T21:56:35.647513",
-        "name": "Test Model",
-        "__class__": "BaseModel"
-    },
-    "City.b1a2e797-1865-412c-8a4e-d7b7faa6f578": {
-        "id": "b1a2e797-1865-412c-8a4e-d7b7faa6f578",
-        "created_at": "2020-08-13T21:56:35.649140",
-        "updated_at": "2020-08-13T21:56:35.649503",
-        "state_id": "21234",
-        "name": "Miami",
-        "__class__": "City"
-    },
-    "Place.e6ee62bd-4558-406f-bc69-1399cddfad0b": {
-        "id": "e6ee62bd-4558-406f-bc69-1399cddfad0b",
-        "created_at": "2020-08-13T21:56:35.650830",
-        "updated_at": "2020-08-13T21:56:35.651184",
-        "city_id": "00010",
-        "user_id": "1211-asdd-1212-000s",
-        "name": "Victoria residence",
-        "description": "Comfortable recidence for the families or                                     couples looking for a weekend escape",
-        "number_rooms": 2,
-        "number_bathrooms": 2,
-        "max_guest": 5,
-        "price_by_night": 60,
-        "latitude": 42.303993,
-        "longitude": -123.443211,
-        "__class__": "Place"
-    },
-    "Review.19da4b47-2183-4504-a082-6a672acf95d7": {
-        "id": "19da4b47-2183-4504-a082-6a672acf95d7",
-        "created_at": "2020-08-13T21:56:35.652451",
-        "updated_at": "2020-08-13T21:56:35.652759",
-        "place_id": "21234",
-        "user_id": "1211-asdd-1212-000s",
-        "text": "texttexttexttexttexttext",
-        "__class__": "Review"
-    },
-    "State.778bd6e7-6ee5-47a3-a5e7-ab894e54f5dc": {
-        "id": "778bd6e7-6ee5-47a3-a5e7-ab894e54f5dc",
-        "created_at": "2020-08-13T21:56:35.653318",
-        "updated_at": "2020-08-13T21:56:35.653641",
+    "State.bab5cb57-30f6-4cfe-b622-1a959b527e7d": {
         "name": "California",
+        "id": "bab5cb57-30f6-4cfe-b622-1a959b527e7d",
+        "created_at": "2020-08-31T20:45:27.071004",
+        "updated_at": "2020-08-31T20:45:27.071142",
         "__class__": "State"
     },
-    "User.c8abf1a0-acc9-4a3c-b778-74489f1bae93": {
-        "id": "c8abf1a0-acc9-4a3c-b778-74489f1bae93",
-        "created_at": "2020-08-13T21:56:35.654332",
-        "updated_at": "2020-08-13T21:56:35.654594",
-        "first_name": "Andrew",
-        "last_name": "Kalil",
-        "email": "andrewlito@gmail.com",
-        "password": "quetelocrea...",
-        "__class__": "User"
+    "State.b10063f3-9756-4ea1-b0cd-0a4fe1e34b2c": {
+        "name": "Arizona",
+        "id": "b10063f3-9756-4ea1-b0cd-0a4fe1e34b2c",
+        "created_at": "2020-08-31T20:45:27.071560",
+        "updated_at": "2020-08-31T20:45:27.071619",
+        "__class__": "State"
+    },
+    "City.b3b6f03f-025d-4cdb-8f33-23b28a837c45": {
+        "state_id": "bab5cb57-30f6-4cfe-b622-1a959b527e7d",
+        "name": "Napa",
+        "id": "b3b6f03f-025d-4cdb-8f33-23b28a837c45",
+        "created_at": "2020-08-31T20:45:27.071989",
+        "updated_at": "2020-08-31T20:45:27.072073",
+        "__class__": "City"
+    },
+    "City.132cf56f-e396-4c30-89e6-34b9fe351f85": {
+        "state_id": "bab5cb57-30f6-4cfe-b622-1a959b527e7d",
+        "name": "Sonoma",
+        "id": "132cf56f-e396-4c30-89e6-34b9fe351f85",
+        "created_at": "2020-08-31T20:45:27.072411",
+        "updated_at": "2020-08-31T20:45:27.072486",
+        "__class__": "City"
+    },
+    "City.0cd288ca-6998-4d0a-8efc-9504570b7074": {
+        "state_id": "b10063f3-9756-4ea1-b0cd-0a4fe1e34b2c",
+        "name": "Page",
+        "id": "0cd288ca-6998-4d0a-8efc-9504570b7074",
+        "created_at": "2020-08-31T20:45:27.072847",
+        "updated_at": "2020-08-31T20:45:27.072921",
+        "__class__": "City"
     }
 }
