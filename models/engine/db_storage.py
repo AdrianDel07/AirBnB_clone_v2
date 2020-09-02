@@ -7,7 +7,7 @@ from models.user import User
 from models.place import Place
 from models.amenity import Amenity
 from models.review import Review
-
+from sqlalchemy.orm import sessionmaker, scoped_session
 from sqlalchemy import create_engine
 from os import getenv
 
@@ -73,7 +73,6 @@ class DBStorage:
 
     def reload(self):
         """create all tables in the database"""
-        from sqlalchemy.orm import sessionmaker, scoped_session
 
         Base.metadata.create_all(self.__engine)
 

@@ -22,7 +22,8 @@ class State(BaseModel, Base):
                               cascade="all, delete-orphan",
                               single_parent=True)
 
-    if getenv("HBNB_TYPE_STORAGE") == "fs":
+    #if getenv("HBNB_TYPE_STORAGE") == "fs":
+    else:
         @property
         def cities(self):
             """Return the list of City instances with state_id """
