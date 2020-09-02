@@ -13,16 +13,15 @@ app.url_map.strict_slashes = False
 @app.route('/states/<id>')
 def states_list(id=None):
     """display States, object found by id State and its cities"""
-    all_state = storage.all(State).values()
     if id:
         _id = id
         id_state = None
-        for state in all_state:
+        for state in storage.all(State).values():
             if state.id == _id:
                 id_state = state
                 break
     else:
-        id_state = list(all_state)
+        id_state = list(storage.all(State).values())
     return (render_template('9-states.html', **locals()))
 
 
